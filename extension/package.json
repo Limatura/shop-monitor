@@ -1,0 +1,20 @@
+{
+  "name": "shop-monitor-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shop Monitor bridge: runs site plugins in your own browser on behalf of the desktop app.",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:edge": "wxt -b edge",
+    "build": "wxt build",
+    "build:edge": "wxt build -b edge",
+    "zip": "wxt zip",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "wxt": "^0.21.3"
+  }
+}

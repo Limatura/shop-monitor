@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shop Monitor Bridge</title>
+    <style>
+      body { font: 14px system-ui, sans-serif; width: 260px; margin: 12px; }
+      .row { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
+      .dot { width: 10px; height: 10px; border-radius: 50%; background: #c33; }
+      .dot.ok { background: #2a2; }
+      button { margin-top: 8px; width: 100%; }
+    </style>
+  </head>
+  <body>
+    <div class="row"><span id="conn-dot" class="dot"></span><span id="conn">桌面程式：未連線</span></div>
+    <div class="row"><span id="us-dot" class="dot"></span><span id="us">使用者指令碼：未啟用</span></div>
+    <button id="fix" hidden>開啟擴充功能設定</button>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
